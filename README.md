@@ -16,13 +16,12 @@ Analysis of the given data and create a reporting tool to analyse and print the 
 2. Navigate to vagrant directory. 
 3. Initialte the virtual machine using $vagrant up.
 4. SSH to the virtual machine using $vagrant ssh.
-5. Go to logs directory with `cd /vagrant/logs`.
-6. Run logs_analysis.py file to analyse the log data. 
-7. A text file will be created showing the analysis data. 
-8. Shutdown the VM. 
+5. Run logs_analysis.py file to analyse the log data. 
+6. A text file will be created showing the analysis data. 
+7. Shutdown the VM. 
 
 ## Files
-This project database is comprised of 3 tables:
+This project database is comprised of 2 files:
 - logs_analysis.py	 
 Internal reporting tool.
 - report.txt
