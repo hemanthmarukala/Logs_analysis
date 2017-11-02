@@ -24,7 +24,7 @@ Analysis of the given data and create a reporting tool to analyse and print the 
 This project database is comprised of 2 files:
 - logs_analysis.py	 
 Internal reporting tool.
-- report.txt
+- analysis.txt
 A Sample result of the analytic tool. 
 
 ## Code Quality
