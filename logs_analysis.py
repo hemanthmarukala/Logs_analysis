@@ -22,9 +22,8 @@ def three_popular_articles():
         f.write("\n \n")
     conn.close()
 
+    
 """return the popular authors"""
-
-
 def popular_authors():
     query2 = "select authors.name , count(log.path) \
               from authors inner join articles \
@@ -45,9 +44,8 @@ def popular_authors():
         f.write("\n \n")
     conn.close()
 
+    
 """Returns the day with more that 1% of the requests leading to errors"""
-
-
 def error_log():
     query3 = "select db1.table1time as date, \
               cast((cast(db1.errorcount as decimal)/\
@@ -82,6 +80,7 @@ def error_log():
                     str(row[1])))
     conn.close()
 
+    
 """Function to execute all the queries. """
 three_popular_articles()
 popular_authors()
