@@ -20,7 +20,7 @@ def three_popular_articles():
         f.write("\n \n")
     conn.close()
 
-    
+
 def popular_authors():
     query2 = "select authors.name , count(log.path) \
               from authors inner join articles \
@@ -41,7 +41,7 @@ def popular_authors():
         f.write("\n \n")
     conn.close()
 
-    
+
 def error_log():
     query3 = "select db1.table1time as date, \
               cast((cast(db1.errorcount as decimal)/\
