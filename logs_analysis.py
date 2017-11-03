@@ -2,8 +2,6 @@ import psycopg2
 DB_NAME = "news"
 
 """Return top 3 popular articles of all time"""
-
-
 def three_popular_articles():
     query1 = "select articles.title, count(*) \
               from articles join log \
