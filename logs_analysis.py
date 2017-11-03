@@ -1,7 +1,7 @@
 import psycopg2
 DB_NAME = "news"
 
-"""Return top 3 popular articles of all time"""
+
 def three_popular_articles():
     query1 = "select articles.title, count(*) \
               from articles join log \
@@ -21,7 +21,6 @@ def three_popular_articles():
     conn.close()
 
     
-"""return the popular authors"""
 def popular_authors():
     query2 = "select authors.name , count(log.path) \
               from authors inner join articles \
@@ -43,7 +42,6 @@ def popular_authors():
     conn.close()
 
     
-"""Returns the day with more that 1% of the requests leading to errors"""
 def error_log():
     query3 = "select db1.table1time as date, \
               cast((cast(db1.errorcount as decimal)/\
@@ -78,7 +76,7 @@ def error_log():
                     str(row[1])))
     conn.close()
 
-    
+
 """Function to execute all the queries. """
 three_popular_articles()
 popular_authors()
