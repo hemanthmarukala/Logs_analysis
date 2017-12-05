@@ -25,8 +25,7 @@ A Sample result of the analytic tool.
 3. Download or clone repository on you machine.
 
 
-##Running the software.
-
+## Running the software:
 1. Initialte the virtual machine using "$vagrant up".
 2. SSH to the virtual machine using "$vagrant ssh".
 3. Download the newsdata.sql database file and add the database file to the PSQL engine on the VM. 
